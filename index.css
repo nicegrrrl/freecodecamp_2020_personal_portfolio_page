@@ -1,0 +1,254 @@
+body {
+	font-family: 'Muli', sans-serif;
+	margin: 0;
+	color: #333C34;
+	background-color: #F4EFEB;
+}
+
+
+
+/* 
+---------------------
+NAV BAR
+---------------------
+*/
+
+#navbar {
+	background-color: #333C34;
+	height: 45px;
+	margin: 0;
+	width: 100%;
+	position: fixed;
+}
+
+.navbarMenu {
+	/*padding: 30px 20px 10px 0;*/
+	margin-top: 1.5vh;
+	margin-right: 2vh;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+.navbarMenu li {
+	padding: 0 20px 0px 20px;
+}
+
+.navbarMenu li a {
+	text-decoration: none;
+}
+
+.navbarMenu li a:visited,a:link {
+	color: #c1c1c1;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.navbarMenu li a:hover {
+	animation-name: colorHoverNavbar;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorHoverNavbar {
+    100% {
+      color: #d2a88b;
+    }
+}
+
+.navbarMenu i {
+	color: #384239;
+	font-weight: 700;
+	font-size: 10px;
+}
+
+
+/* 
+---------------------
+WELCOME SECTION
+---------------------
+*/
+
+#welcome-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 0 0 0 0;
+	margin: 0;
+}
+
+.hey {
+	font-size: 7rem;
+}
+
+.heySubtitle {
+	margin: 1.8rem 0 0 1rem;
+}
+
+.heySubtitle p:first-of-type {
+	font-size: 1.4rem;
+}
+
+.heySubtitle p:nth-of-type(2) {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.alana {
+	font-weight: 700;
+}
+
+
+
+/* 
+---------------------
+SECTION HEADER SECTION
+being used in PROJECTS and CONTACT
+---------------------
+*/
+
+
+.sectionHeader {
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.sectionHeader h1 {
+	font-size: 3rem;
+	margin: 0 0 7vh 0;
+}
+
+.sectionHeader p {
+	margin: 1vh 0 0 0;
+}
+
+
+/* 
+---------------------
+PROJECTS SECTION
+---------------------
+*/
+
+#projects {
+	height: 100vh;
+	padding-top: 4vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.projectImage {
+	height: 12rem;
+}
+
+.project-grid {
+	width: 70%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-tile {
+	padding: 1rem;
+}
+
+.project-tile p {
+	text-align: center;
+	margin-top: 0.2rem;
+	font-size: 15px;
+}
+
+.project-tile a:link, a:visited {
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+
+
+
+/* 
+---------------------
+CONTACT SECTION
+---------------------
+*/
+
+#contact {
+	height: 100vh;
+	padding-top: 4vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.contactLinks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	font-size: 7vh;
+	margin-top: 4vh;
+}
+
+.contactLinks a {
+	padding: 4vh 14vh 0 0;
+}
+
+.contactLinks a:link, a:visited {
+	color: black;
+}
+
+.contactLinks a:hover {
+	animation-name: colorHoverContact;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorHoverContact {
+    100% {
+      color: #d2a88b;
+    }
+}
+
+.contactLinks i {
+	font-size: 50px;
+}
+
+
+
+/* 
+---------------------
+RESPONSIVE
+---------------------
+*/
+
+@media (max-width: 1200px) {
+	#projects {
+		height: 100%;
+	}
+}
+
+
+@media (max-width: 530px) {
+
+	.navbarMenu {
+		justify-content: flex-start;
+	}
+
+	
+}
+
+@media (max-width: 350px) {
+	.contactLinks {
+		flex-direction: column;
+	}
+}
